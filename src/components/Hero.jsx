@@ -47,7 +47,7 @@ const Hero = () => {
   const circularIndex = (index) => (index + img_logo.length) % img_logo.length;
 
   return (
-    <section className="flex flex-col h-screen">
+    <section id='home' className="flex flex-col h-screen md:h-[70vh] lg:h-screen ">
     {/* Desktop*/}
     <div className={`hidden md:flex justify-evenly flex-row  h-auto lg:h-screen pt-20 items-center ${bgColor}`}>
       <div className="flex-1 flex flex-col justify-center items-start">
@@ -100,12 +100,12 @@ const Hero = () => {
                 key={index}
                 src={item.img_url}
                 alt={item.alt}
-                className={`border border-transparent w-auto lg:h-120 md:h-60 ${item.clr} rounded-2xl absolute transition-transform duration-900 ease-in-out`}
+                className={`border border-transparent w-auto lg:h-120 md:h-60 ${item.clr} backdrop-blur-sm bg-clip-padding rounded-2xl absolute transition-transform duration-900 ease-in-out`}
                 style={{
                   transform: `translateX(${translateX}px) scale(${scale})`,
                   opacity,
                   zIndex,
-                  filter: position === 0 ? 'blur(0px)' : 'blur(4px)',
+                  filter: position === 0 ? 'blur(0px) drop-shadow(0px 0px 5px rgba(0,0,0,0.2))' : 'blur(4px)',
                   willChange: 'transform, opacity, filter'
                 }}
               />
@@ -174,7 +174,7 @@ const Hero = () => {
                     transform: `translateX(${translateX}px) scale(${scale})`,
                     opacity,
                     zIndex,
-                    filter: position === 0 ? 'blur(0px)' : 'blur(1px)',
+                    filter: position === 0 ? 'blur(0px) drop-shadow(0px 0px 5px rgba(0,0,0,0.2))' : 'blur(1px)',
                     willChange: 'transform, opacity, filter',
                     left: '50%',
                     top: '50%',

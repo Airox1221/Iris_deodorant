@@ -16,3 +16,7 @@
 
 @import "tailwindcss";
 
+
+.slider_img_box{
+  @apply  rounded-xl  pt-2 hover:shadow-xl ;
+}
