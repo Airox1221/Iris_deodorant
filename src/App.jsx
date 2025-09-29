@@ -16,12 +16,14 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import BestSeller from './components/BestSeller'
+import About from './components/About'
 const App = () => {
   return (
     <>
         <Navbar/>
         <Hero/>
         <BestSeller/>
+        <About/>
     </>
   )
 }

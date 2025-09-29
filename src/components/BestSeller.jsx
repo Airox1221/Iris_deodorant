@@ -11,7 +11,7 @@
 // WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 // See the License for the specific language governing permissions and
 // limitations under the License.
-import Slider from './Slider'
+import Slider from './slider';
 import React from 'react'
 import { useEffect ,useRef } from 'react'
 import w_img1 from '../assets/story/wm.webp'
@@ -25,7 +25,7 @@ import { gsap } from "gsap";
 
 const BestSeller = () => {
   return (
-    <section className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-60">
+    <section id='BestSeller' className="px-4 sm:px-6 md:px-12 lg:px-24 xl:px-60">
       <div className="flex flex-col">
         {/* FOR HER / FOR HIM Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 pt-6 md:pt-0 lg:pt-10 ">

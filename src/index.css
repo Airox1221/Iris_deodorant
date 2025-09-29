@@ -16,7 +16,23 @@
 
 @import "tailwindcss";
 
+:root {
+            --color-primary: #58416d; /* Deep Purple/Iris color */
+            --color-accent: #dcffe1; /* Off-white/Beige for contrast */
+        }
+        .font-iris-heading {
+            font-family: 'Cormorant Garamond', serif;
+        }
+        .font-iris-body {
+            font-family: 'Inter', sans-serif;
+        }
+        .text-iris-primary { color: var(--color-primary); }
+        .bg-iris-accent { background-color: var(--color-accent); }
 
 .slider_img_box{
   @apply  rounded-xl  pt-2 hover:shadow-xl ;
+}
+
+.philo_card{
+  @apply hover:shadow-xl;
 }
