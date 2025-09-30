@@ -17,6 +17,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import BestSeller from './components/BestSeller'
 import About from './components/About'
+import Testimonial from './components/Testimonial'
 const App = () => {
   return (
     <>
@@ -24,6 +25,7 @@ const App = () => {
         <Hero/>
         <BestSeller/>
         <About/>
+        <Testimonial/>
     </>
   )
 }

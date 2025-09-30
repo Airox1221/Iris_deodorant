@@ -47,7 +47,7 @@ const About = () => {
           <div className="w-full h-130 px-6 md:h-100 lg:h-120 bg-iris-accent flex flex-col sm:flex-row  md:px-12 lg:px-60">
             <div className="flex flex-col flex-1 py-5 gap-2 lg:gap-6 justify-center">
               <h3 className='text-xl lg:text-3xl font-serif text-zinc-950'>Rooted in Tradition</h3>
-              <span className='text-justify text-zinc-950 text-sm lg:text-md font-serif '>We believe fragrance is a form of art — a way to express who you are without words. 
+              <span className='text-justify text-zinc-950 text-sm lg:text-lg font-serif '>We believe fragrance is a form of art — a way to express who you are without words. 
               Inspired by the grace and symbolism of the iris flower, our perfumes are crafted from rare botanicals and blended to evoke emotion, elegance, and memory. 
               Each scent is a signature experience, designed to stay with you long after the first impression.
               At Iris, every bottle is a celebration of craftsmanship and creativity, capturing moments that deserve to be remembered.

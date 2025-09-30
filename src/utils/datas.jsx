@@ -14,6 +14,12 @@
 
 import React from 'react'
 // trendingData.js
+
+export const store_imgs = Object.values(
+  import.meta.glob('../assets/marque/*.png',{eager:true})
+).map((items)=>(items.default))
+
+
 const images = Object.values(
   import.meta.glob('../assets/tending/*.webp', { eager: true })
 ).map((module) => module.default);
