@@ -25,10 +25,12 @@ const Navbar = () => {
     <div className="fixed top-0 left-0 right-0 px-6  h-16 flex items-center z-40 bg-white  border-b border-emerald-100">
       <div className="flex w-full items-center justify-between px-2">
         {/* Logo */}
-        <figure className="rounded-xl overflow-hidden bg-white hover:bg-emerald-100">
+        <figure className="flex flex-row items-center gap-2 rounded-xl overflow-hidden bg-white hover:bg-emerald-100">
           <a href="#home">
             <img src={logo} width={50} height={50} alt="logo" />
           </a>
+          {}
+          <h2 className='max-md:hidden text-center md:text-2xl text-2xl font-serif font-semibold text-zinc-900'>IRIS</h2>
         </figure>
 
         {/* Navigation Buttons */}

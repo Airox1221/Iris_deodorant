@@ -29,6 +29,9 @@
         .text-iris-primary { color: var(--color-primary); }
         .bg-iris-accent { background-color: var(--color-accent); }
 
+html {
+  scroll-behavior: smooth;
+}
 .slider_img_box{
   @apply  rounded-xl  pt-2 hover:shadow-xl ;
 }

@@ -98,8 +98,10 @@ const Review = () => {
 
 
   return (
-    <div className='relative max-md:px-6 px-14 lg:px-60' >
-          <div className="w-full flex bg-iris-accent shadow-lg flex-col items-center h-80 max-sm:h-60 rounded-4xl justify-evenly" ref={testbox} >
+    <div className='relative max-md:px-6 px-14 lg:px-60 overflow-hidden pb-5' >
+          <div className="w-full flex bg-iris-accent shadow-lg  flex-col items-center h-80 max-sm:h-60 rounded-4xl justify-evenly overflow-hidden" 
+            ref={testbox}
+          >
             <div className="text-xl md:text-3xl lg:text-4xl font-iris-heading italic md:py-2">"{items.title}"</div>
             <div className="text-[#ffbf00] text-lg md:text-2xl lg:text-3xl ">{items.rating}</div>
             <div className="px-10 min-sm:px-18 lg:px-40 text-center text-zinc-600 font-serif max-sm:text-[10px] text-md md:text-md lg:text-xl">{items.review}</div>

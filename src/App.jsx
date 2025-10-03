@@ -18,6 +18,7 @@ import Hero from './components/Hero'
 import BestSeller from './components/BestSeller'
 import About from './components/About'
 import Testimonial from './components/Testimonial'
+import Footer from './components/Footer'
 const App = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const App = () => {
         <BestSeller/>
         <About/>
         <Testimonial/>
+        <Footer/>
     </>
   )
 }
