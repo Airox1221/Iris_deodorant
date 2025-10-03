@@ -19,7 +19,7 @@ import { store_imgs } from '../utils/datas';
 
 const Testimonial = () => {
   return (
-    <section>
+    <section id='Reviews' className='lg:pt-20'>
       <div className="flex flex-col max-h-max">
         <div className="md:h-80 lg:h-100">
           <div className="stores-sec max-sm:h-25 h-35 lg:h-60 w-full bg-iris-accent pt-2 pb-10">

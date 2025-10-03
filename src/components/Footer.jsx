@@ -23,7 +23,7 @@ const Footer = () => {
     const BUTTON_COLOR_CLASS = 'bg-teal-600 hover:bg-teal-500 transition duration-300';
 
     return (
-        <section className="bg-gray-900 border-t border-teal-800/50 max-sm:h-max text-white"> 
+        <section id='contact' className="bg-gray-900 border-t border-teal-800/50 max-sm:h-max text-white"> 
             <div className="flex flex-col px-6 sm:px-6 md:px-14 lg:px-60 py-20 max-sm:py-5">
               <div className="flex flex-row max-sm:flex-col justify-between max-sm:justify-start w-full">
                 <div className="logo-sec w-1/4">

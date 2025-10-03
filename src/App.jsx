@@ -13,6 +13,7 @@
 // limitations under the License.
 
 import React from 'react'
+import { ReactLenis, useLenis } from 'lenis/react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import BestSeller from './components/BestSeller'
@@ -20,14 +21,27 @@ import About from './components/About'
 import Testimonial from './components/Testimonial'
 import Footer from './components/Footer'
 const App = () => {
+  const lenis = useLenis((lenis) => {
+    // called every scroll
+    console.log(lenis)
+  })
   return (
     <>
+      <ReactLenis root 
+        options={{
+          duration: 2, // slower & smoother than default
+          easing: (t) => 1 - Math.pow(1 - t, 3), // cubic easing
+          smoothWheel: true,
+          smoothTouch: false
+          }}
+      >
         <Navbar/>
         <Hero/>
         <BestSeller/>
         <About/>
         <Testimonial/>
         <Footer/>
+      </ReactLenis>
     </>
   )
 }
